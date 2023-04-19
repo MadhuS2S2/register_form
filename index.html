@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="form">
+        <h1>Register Form</h1>
+
+      <form action="userinfo.php" method="POST">
+        <label for="fname">FirstName:</label>
+        <input type="text" name="fname"  id="">
+
+        <label for="lname">LastName:</label>
+        <input type="text" name="lname"  id="">
+
+        <label for="mobno">Mob No:</label>
+        <input type="number" name="mobno"  id="">
+
+        <label for="email">Email-Id:</label>
+        <input type="text" name="email"  id="">
+        
+        <label for="dob">DOB:</label>
+        <input type="date" name="dob"  id="">
+        
+        <label for="gender">Gender:</label>
+        <div class="gen" name="gender">
+           <input name="gen" value="male" type="radio" id="radio"></input><span>male</span>
+           <input name="gen" value="female" type="radio" id="radio"></input><span>female</span>
+        </div>
+        
+        <label for="hobb">Hobbies:</label>
+        <div class="hobbies" name="hobb">
+          <textarea name="hobs" id="hobs" cols="30" rows="5">Hobbies...</textarea>
+        </div>
+
+        <label for="address">Address:</label>
+        <textarea  name="address" id=""  rows="5" cols="30">Address...</textarea>
+        
+        <label for="qualifications">Qualification:</label>
+        <select name="qualifications" id="">
+            <option name="qual" value="q1">q1</option>
+            <option name="qual" value="q2">q2</option>
+            <option name="qual" value="q3">q5</option>
+            <option name="qual" value="q4">q4</option>
+            <option name="qual" value="q6">q3</option>
+            <option name="qual" value="q9">q8</option>
+        </select>
+        <button class="sbtn" id="submit" name="sbtn"  value="insert">Submit</button>
+        <button class="cbtn" name="sbtn"  value="dis" >Show</button>
+      </form>  
+
+    </div>
+    
+</body>
+</html>
